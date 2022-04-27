@@ -1,8 +1,10 @@
+const issAPI = 'http://api.open-notify.org/astros.json';
+
 async function userAction () {
     try {
        console.log ("entrei na funcao");
 
-       const response = await fetch ('http://api.open-notify.org/astros.json');
+       const response = await fetch (issAPI);
        const apiReturn = await response.json();
 
        console.log("passei pela api");
